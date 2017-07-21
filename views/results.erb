@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Volunteer</title>
+    <link href='https://fonts.googleapis.com/css?family=Cedarville Cursive' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=The Girl Next Door' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Sorts Mill Goudy' rel='stylesheet'>
+    
+  <link rel="shortcut icon" type="image/x-icon" href="https://png.icons8.com/ios/1600/007AFF/handshake-heart-filled" />
+  </head>
+  
+  <body>
+    <style>
+    body {
+    background-color: snow white;
+    }
+
+    h1 {
+     font-family:'Sorts Mill Goudy';
+     font-weight: bold;
+     font-size: 60px;
+     text-align: center;
+     color: #070C40;
+     }
+     
+    h2 {
+     text-align: center;
+     font-size: 30px;
+     font-family:'Sorts Mill Goudy'; 
+     color: #F5B7B1  ;
+    }
+     
+    </style>
+  
+  <!--<--!This is where we take the instance variable from the application controller -->
+  <!--and apply it inside of the html with ruby <&= &> and get the results of what is being-->
+  <!--passed through our model on this page-->
+  
+  <h1>Check out <%=@final_title%>!</h1>
+  <h2><%=@final_blurb%></h2>
+  <h2>Click on the link below to volunteer:</h2>
+  <h2><a href="<%=@final_links%>" class="button">Volunteer Now!</a></h2>
+   
+  
+   
+  </body>
+</html>

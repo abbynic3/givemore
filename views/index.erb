@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<title>give MOre</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Helvetica">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="https://png.icons8.com/ios/1600/007AFF/handshake-heart-filled" />
+</head>
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica", helvetica}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('https://pbs.twimg.com/media/DFNHJGrUMAEfMoB.jpg');
+    min-height: 100%;
+}
+</style>
+<body>
+
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="bgimg"></div>
+</nav>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-white w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-white w3-text-blue w3-hover-light-grey w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center w3-text-blue">
+    <a href="#" class="w3-bar-item w3-button w3-text-blue w3-hover-blue" onclick="closeNav()">Home</a>
+    <a href="#volunteens" class="w3-bar-item w3-button w3-text-blue w3-hover-blue" onclick="closeNav()">Volunteens</a>
+    <a href="#select_your_location" class="w3-bar-item w3-button w3-text-blue w3-hover-blue" onclick="closeNav()">Select Your Location</a>
+    <!--<a href="#volunteering_preference" class="w3-bar-item w3-button w3-text-blue w3-hover-blue" onclick="closeNav()">Volunteering Preference</a>-->
+    <a href="#about" class="w3-bar-item w3-button w3-text-blue w3-hover-blue" onclick="closeNav()">About</a>
+    <a href="#the_creators" class="w3-bar-item w3-button w3-text-blue w3-hover-blue" onclick="closeNav()">The Creators</a>  
+    <a href="#social_media" class="w3-bar-item w3-button w3-text-blue w3-hover-blue" onclick="closeNav()">Social Media</a>
+    </div>
+</nav>
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
+
+  <!-- Menu icon to open sidebar -->
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-blue w3-hover-text-blue" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-text-blue" style="padding:128px 16px" id="home">
+    <img src="http://www2.youseemore.com/culpeper/uploads/volunteer.png" class="w3-image w3-center">
+    <h1 class="w3-jumbo">give MOre</h1>
+    <p>involving Missouri teens in their communities</p>
+    <img src="/w3images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+    <img src="/w3images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+
+  </header>
+
+  <!-- Portfolio Section -->
+  <div class="w3-padding-32 w3-content" id="volunteens">
+    <hr class="w3-opacity">
+    <h2 class="w3-text-blue">Volunteens</h2>
+    
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="https://www.bluecross.org.uk/sites/default/files/styles/content_small/public/assets/images/dog%20walking.jpg?itok=-HLTijA_" style="width:100%">
+        <img src="https://pbs.twimg.com/media/DFNJGhlU0AAq2wK.jpg" style="width:100%">
+        <img src="http://www.pamplinmediagroup.com/images/artimg/00003523478950.jpg" style="width:100%">
+      </div>
+
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  
+  <!--LOCATION PREFERENCE-->
+   <div class="w3-padding-32 w3-content" id="select_your_location">
+     <hr class="w3-opacity">
+      <h2 class="w3-text-blue">Select Your Location</h2>
+  <div class="dropdown-content">
+    
+  <select name="location" form="locationform">
+  <option value="select">select</option>
+  <option value="St.Louis">St. Louis</option>
+  <option value="Kirkwood">Kirkwood</option>
+  <option value="Chesterfield">Chesterfield</option>
+  <option value="Ladue">Ladue</option>
+  <option value="St.Charles">St. Charles</option>
+</select>
+
+<!--<form method="POST" action="results" id="locationform">-->
+<!--  <button type="submit">Submit</button>-->
+<!--     </form>-->
+     
+     
+     <!--VOLUNTEERING PREFERENCE-->
+     
+     <hr class="w3-opacity">
+     
+  <div class="w3-padding-32 w3-content">
+      <h2 class="w3-text-blue">Volunteering Preference</h2>
+  <div class="dropdown-content">
+    
+  <select name="volunteer_pref" form="locationform">
+  <option value="select">select</option>
+  <option value="soup_kitchen">Food Pantry/Soup Kitchen</option>
+  <option value="children">Children in Need</option>
+  <option value="veterans_home">Nursing/Veteran's Home</option>
+  <option value="animal_shelter">Animal Shelter</option>
+  </select>
+  
+<form method="POST" action="results" id="locationform">
+     <button type="submit">Submit</button>
+</form>
+
+
+
+
+
+   <!--About Section -->
+  <hr class="w3-opacity">
+  <div class="w3-content w3-justify w3-text-blue w3-padding-32" id="about">
+    <h2>About</h2>
+    <p>"The mission of <i>give MOre</i> is to encourage teenagers from Missouri to be active in their community through volunteer work. 
+    By establishing a simple platform for teenagers to discover volunteer opportunites near their homes that fit their passions, teens develop traits that will follow them into adulthood.
+    It is so important today because so many people are consumed in their social lives and that's why we created this app for teens to put down their phones and 
+    volunteer their time. What people don't know is that volunteering can be as easy as walking a dog, donating a book, or carrying someone's groceries. It truly is amazing to see how something so small can have such a big impact."</p>
+    
+    <p>-Abilene Lortz, Kailin Zhang, and Jade Timmons</p>
+    <p><i>Kode With Klossy St. Louis 2017 Scholars</i></p>
+    
+    
+    </p>
+   <hr class="w3-opacity">
+
+    <div class="w3-row w3-center w3-blue w3-padding-16 w3-section">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">1</span><br>
+        State
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">6.084</span><br>
+        Million People
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">961</span><br>
+        Cities
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">114</span><br>
+        Counties
+      </div>
+    </div>
+<hr class="w3-opacity">
+  <div class="w3-padding-32 w3-content" id="the_creators">
+      <h2 class="w3-text-blue">The Creators</h2>
+  <div class="dropdown-content">
+    <!-- Testimonials -->
+    <img src="https://pbs.twimg.com/media/DFNMpT_UQAAT4sy.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-text-black w3-margin-right">Abilene Lortz</span></p>
+    <p>Creating <i>give MOre</i> with Jade and Kailin has been such an amazing experience and I am so lucky 
+    to have these girls as my partners. Volunteering is very important to me because I love knowing that I have made someone else's day. I play the piano every weekend at the Veteran's Home in my town, I am part of the VetsBuddy program there, I have played the piano at all seven of the Missouri Veteran's Homes, 
+    the North Little Rock Veteran's Home, I ring the bell for the Salvation Army, 
+    and I also volunteer at the Tri-Country Humane Society.</p><br>
+  <p><i>Instagram:</i></p><a href="https://www.instagram.com/abilenelortz/?hl=en"><p><i>@abilenelortz</i></p></a>
+   <hr class="w3-opacity">
+    <img src="https://scontent-sjc2-1.cdninstagram.com/t51.2885-15/e35/20184324_1195724083873028_5653267256163958784_n.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-text-black w3-margin-right">Kailin Zhang</span></p>
+    <p>I've always enjoyed volunteering because I love getting involved with my community and helping others. I've volunteered at my local library and help out at the science center on the weekends. The experience of helping others truly teaches me to appreciate what I have and remember to give back to my community. I'm so excited to create <i>give MOre</i> with Abby and Jade because it's often difficult to find places to volunteer at as a teen. We hope this app will help encourage teenagers to get involved in their own communities and develop a love for volunteering as well.</p><br>
+    <p><i>Instagram:</i></p><a href="https://www.instagram.com/kailinzhanng/?hl=en"><p><i>@kailinzhanng</i></p></a>
+    <hr class="w3-opacity">
+    <img src="https://scontent.xx.fbcdn.net/v/t1.0-9/20228632_1934528766805035_2633087822200869786_n.jpg?oh=cfae33825769a7caf4cbee0bfe5bebae&oe=5A0F6A65" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-text-black w3-margin-right">Jade Timmons</span></p>
+    <p>It was such an amazing oppoutunity to be able to work on <i>give MOre</i> with Abilene and Kailin because I was taught at a very young age that it is important to be aware of those in need aorund you, but growing older I've found it hard to be involved in my community. <i>give MOre</i> is supposed to help change that. I have served at Mount Carmel nursing home and many soup kitchens around the greater St. Louis area. I am also a Type 1 Diabetic and have been involved with JDRF to help raise money for finding a cure.</p><br>
+    <p><i>Instagram:</i></p><a href="https://www.instagram.com/jadetimmons/?hl=en"><p><i>@jadetimmons</i></p></a>
+   <hr class="w3-opacity">
+    </div>
+    
+  <!-- End About Section -->
+  </div>
+
+ 
+     <!-- Google Map -->
+    <!--<div id="googleMap" class="w3-greyscale-max" style="width:100%;height:300px;margin:36px 0;"></div>-->
+   
+    
+  <!-- Footer -->
+  
+   
+  <!-- End footer -->
+  <div class="w3-padding-32 w3-content" id=social_media>
+      <h2 class="w3-text-blue">Social Media</h2>
+  <div class="dropdown-content">
+  </footer>
+  <h2>Follow <i>give MOre</i> on Instagram:</h2>
+  <a href="https://www.instagram.com/giveitseasy/?hl=en"><p>@giveitseasy</p></a>
+<!-- END PAGE CONTENT -->
+</div>
+
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Open and close sidebar
+function openNav() {
+    document.getElementById("mySidebar").style.width = "60%";
+    document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
